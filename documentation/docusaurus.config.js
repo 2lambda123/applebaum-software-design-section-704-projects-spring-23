@@ -112,10 +112,10 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
+            href: 'https://github.com/2lambda123/applebaum-software-design-section-704-projects-spring-23',
             docId: 'new-doc-id',
             position: 'left',
-            label: 'Documentation',
+            label: 'My Desired Label',
           },{
             to: '/tutorial/Intro',
             label: 'Docusaurus Tutorial',
