@@ -1,0 +1,43 @@
+name: Build and Deploy Documentation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Build documentation website
+        run: yarn build
+
+      - name: Deploy website
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const useSSH = process.env.USE_SSH === 'true';
+            const gitUser = process.env.GIT_USER || '';
+
+            if (useSSH) {
+              console.log('Deploying using SSH');
+              console.log('Run the deploy command with SSH');
+              console.log('$ USE_SSH=true yarn deploy');
+            } else {
+              console.log('Deploying without SSH');
+              console.log('Run the deploy command without SSH');
+              console.log(`$ GIT_USER=${gitUser} yarn deploy`);
+            }
