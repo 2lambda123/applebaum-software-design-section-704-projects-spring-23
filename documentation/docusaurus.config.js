@@ -30,8 +30,8 @@ const config = {
   title: 'My New Project',
   tagline: 'Welcome to My New Project',
   /*Unless you move this website to a seperate repo don't change url and baseurl.*/
-  url: 'https://'+process.env.ORG_NAME+'.github.io/',
-  baseUrl: '/'+process.env.PROJECT_NAME+'/',
+  url: 'https://example.com/',
+  baseUrl: '/',
   trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
