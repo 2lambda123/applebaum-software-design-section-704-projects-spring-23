@@ -65,8 +65,7 @@ const config = {
           path: 'docs',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/'+process.env.ORG_NAME+'/'+process.env.PROJECT_NAME+'/edit/main/documentation/',
+          editUrl: 'https://github.com/my-org/my-repo/edit/main/docs/',
           // remarkPlugins: [require('mdx-mermaid')],
 
         },
