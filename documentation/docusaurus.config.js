@@ -106,10 +106,10 @@ const config = {
     ({
       navbar: {
         /*TODO: Change to your project's title*/
-        title: title,
+        title: 'My New Project',
         logo: {
-          alt: 'My Site Logo',
-          src: logo,
+          alt: 'New Logo Description',
+          src: 'https://new-logo-url.com',
         },
         items: [
           {
