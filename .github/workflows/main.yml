@@ -18,13 +18,19 @@ jobs:
         with:
           node-version: 14
 
-      - name: Install dependencies
-        run: yarn
+        - name: Install dependencies
+        run: yarn install
 
       - name: Build Documentation Website
         run: yarn build
 
+      - name: Set up environment variables
+        run: |
+          echo 'USE_SSH=true' >> $GITHUB_ENV
+          echo 'GIT_USER=<your_git_user>' >> $GITHUB_ENV
+
       - name: Deploy website
+        run: yarn deploy
         uses: actions/github-script@v4
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
