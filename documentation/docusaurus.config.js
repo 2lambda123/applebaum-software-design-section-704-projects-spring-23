@@ -167,7 +167,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/'+process.env.ORG_NAME+'/'+process.env.PROJECT_NAME,
+                href: 'https://github.com/my-org/my-repo',
               },
             ],
           },
