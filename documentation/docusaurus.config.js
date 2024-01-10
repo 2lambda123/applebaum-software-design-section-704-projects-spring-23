@@ -105,17 +105,17 @@ const config = {
     ({
       navbar: {
         /*TODO: Change to your project's title*/
-        title: 'My New Project',
+        title: 'Documentation Project',
         logo: {
-          alt: 'New Logo Description',
-          src: 'https://new-logo-url.com',
+          alt: 'Updated Logo Description',
+          src: 'https://correct-logo-url.com',
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            href: 'https://github.com/2lambda123/applebaum-software-design-section-704-projects-spring-23',
+            docId: 'new-doc-id',
             position: 'left',
-            label: 'Documentation',
+            label: 'My Desired Label',
           },{
             to: '/tutorial/Intro',
             label: 'Docusaurus Tutorial',

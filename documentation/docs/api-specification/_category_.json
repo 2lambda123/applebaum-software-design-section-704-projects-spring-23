@@ -2,7 +2,7 @@
   "label": "API Specification",
   "position": 7,
   "link": {
-    "type": "generated-index",
+    "type": "custom-index",
     "description": "Please remove and replace examples where necessary."
   }
 }

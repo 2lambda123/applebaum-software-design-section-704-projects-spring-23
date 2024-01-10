@@ -3,7 +3,7 @@ sidebar_position: 1
 description: What should be in this section.
 ---
 
-Design Document - Part II API
+API Design Document
 =============================
 
 **Purpose**
@@ -12,9 +12,9 @@ This Design Document gives the complete design of the software implementation. T
 
 **Requirements**
 
-In addition to the general documentation requirements the Design Document - Part II API will contain:
+In addition to the general documentation requirements the API Design Document will contain:
 
-General review of the software architecture for each module specified in Design Document - Part I Architecture. Please include your class diagram as an important reference.
+General review of the software architecture for each module specified in software architecture. Please include your class diagram as an important reference.
 
 **For each class define the data fields, methods.**
 
@@ -36,6 +36,6 @@ Exceptions thrown\* (PLEASE see note below for details).
 
 An example of an auto-generated and then augmented API specification is here ([Fiscal Design Document 2\_API.docx](https://templeu.instructure.com/courses/106563/files/16928898?wrap=1 "Fiscal Design Document 2_API.docx") )
 
-This group developed their API documentation by hand ([Design Document Part 2 API-1\_MovieMatch.docx](https://templeu.instructure.com/courses/106563/files/16928899?wrap=1 "Design Document Part 2 API-1_MovieMatch.docx") )
+This group developed their API documentation by hand ([API\_MovieMatch.docx](https://templeu.instructure.com/courses/106563/files/16928899?wrap=1 "API_MovieMatch.docx") )
 
 \*At the top level, or where appropriate, all exceptions should be caught and an error message that is meaningful to the user generated. It is not OK to say ("xxxx has encountered a problem and will now close (OK?)". Error messages and recovery procedures should be documented in the User’s Manual.
