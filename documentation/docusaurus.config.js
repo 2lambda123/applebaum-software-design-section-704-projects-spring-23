@@ -27,8 +27,8 @@ const title = ''+process.env.PROJECT_NAME.replaceAll('-',' ').split(' ').map((wo
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   /*TODO: Change to your project's title and tagline*/
-  title: title,
-  tagline: 'Owls are cool',
+  title: 'My New Project',
+  tagline: 'Welcome to My New Project',
   /*Unless you move this website to a seperate repo don't change url and baseurl.*/
   url: 'https://'+process.env.ORG_NAME+'.github.io/',
   baseUrl: '/'+process.env.PROJECT_NAME+'/',
